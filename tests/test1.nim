@@ -1,0 +1,3 @@
+import cpkgfinder
+
+configureCPackage("zlib")
