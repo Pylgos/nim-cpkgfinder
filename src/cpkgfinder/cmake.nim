@@ -28,7 +28,7 @@ proc genCMakeLists(name: string, opt: FindOptions): string =
     of langC: "C"
     of langCpp: "CXX"
   let res = fmt"""
-  cmake_minimum_required()
+  cmake_minimum_required(VERSION 3.5)
   project(dummy_project)
   find_package({name} REQUIRED)
   file(WRITE version.txt "${{{name}_VERSION}}")
